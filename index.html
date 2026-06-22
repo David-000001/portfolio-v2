@@ -63,7 +63,8 @@ a:hover{color:var(--crimson-dark)}
 .hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='grid' width='60' height='60' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 60 0 L 0 0 0 60' fill='none' stroke='rgba(201,168,76,0.06)' stroke-width='1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grid)'/%3E%3C/svg%3E");opacity:0.8}
 .hero::after{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(165,28,48,0.12) 0%,transparent 70%);pointer-events:none}
 .hero-content{text-align:center;position:relative;z-index:1;max-width:800px}
-.hero-avatar{width:110px;height:110px;border-radius:50%;background:linear-gradient(135deg,var(--crimson),var(--crimson-dark));display:flex;align-items:center;justify-content:center;font-family:'EB Garamond',serif;font-size:2.4rem;font-weight:700;color:var(--white);margin:0 auto 2rem;border:3px solid var(--gold);box-shadow:0 0 0 6px rgba(201,168,76,0.15),var(--shadow-lg);letter-spacing:0.05em}
+.hero-avatar{width:110px;height:110px;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center;margin:0 auto 2rem;border:3px solid var(--gold);box-shadow:0 0 0 6px rgba(201,168,76,0.15),var(--shadow-lg)}
+.hero-avatar img{width:100%;height:100%;object-fit:cover;display:block}
 .hero-seal{display:flex;align-items:center;justify-content:center;gap:0.75rem;margin-bottom:1.5rem}
 .seal-line{flex:1;max-width:80px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
 .seal-line.right{background:linear-gradient(90deg,var(--gold),transparent)}
@@ -235,7 +236,7 @@ footer .footer-divider{width:40px;height:1px;background:var(--gold);margin:0.75r
 <!-- HERO -->
 <section class="hero">
 <div class="hero-content">
-<div class="hero-avatar">AD</div>
+<div class="hero-avatar"><img src="profile.jpg" alt="Avijit Chandra Dey"></div>
 <div class="hero-seal">
 <div class="seal-line"></div>
 <span class="seal-text">Portfolio · 2026</span>
