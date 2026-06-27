@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Avijit Chandra Dey — Portfolio</title>
+<title>Avijit Chandra Dey â Portfolio</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -52,7 +52,7 @@ a:hover{color:var(--crimson-dark)}
 .nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
 .nav-toggle span{display:block;width:22px;height:2px;background:var(--white);border-radius:2px;transition:var(--transition)}
 
-/* HERO — MATTE BLACK */
+/* HERO â MATTE BLACK */
 .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;background:#111111;padding:6rem 2rem 4rem;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(201,168,76,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,0.04) 1px,transparent 1px);background-size:60px 60px}
 .hero::after{content:'';position:absolute;top:-40%;right:-15%;width:600px;height:600px;background:radial-gradient(circle,rgba(165,28,48,0.09) 0%,transparent 70%);pointer-events:none}
@@ -121,7 +121,7 @@ a:hover{color:var(--crimson-dark)}
 .exp-date{font-size:0.75rem;font-weight:700;letter-spacing:0.08em;color:var(--crimson);white-space:nowrap;background:rgba(165,28,48,0.06);padding:0.25rem 0.6rem;border-radius:100px;border:1px solid rgba(165,28,48,0.15)}
 .exp-list{list-style:none;padding:0}
 .exp-list li{font-size:0.875rem;color:var(--text-secondary);line-height:1.7;padding-left:1.25rem;position:relative;margin-bottom:0.4rem}
-.exp-list li::before{content:'▸';position:absolute;left:0;color:var(--crimson);font-size:0.75rem;top:0.15rem}
+.exp-list li::before{content:'â¸';position:absolute;left:0;color:var(--crimson);font-size:0.75rem;top:0.15rem}
 
 /* PROJECTS */
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.75rem}
@@ -360,6 +360,18 @@ footer strong{color:var(--gold)}
     </div>
     <div class="projects-grid fade-in">
       <div class="project-card">
+<div class="project-top">
+<span class="project-badge badge-adv">&#x2B21; Advanced</span>
+<div class="project-title">Apex Rigor MCQ</div>
+<div class="project-desc">AI-powered MCQ generator for students &amp; educators. Converts PDF, notes, or any text into rigorous Multiple Choice Questions using Google Gemini AI. Features Bloom&rsquo;s Higher-Order Taxonomy scoring, cognitive analytics dashboard, quiz sessions, and performance tracking.</div>
+<div class="project-tech"><span class="tech-tag">TypeScript</span><span class="tech-tag">React</span><span class="tech-tag">Gemini AI</span><span class="tech-tag">Node.js</span><span class="tech-tag">Vite</span><span class="tech-tag">Tailwind</span></div>
+</div>
+<div class="project-actions">
+<a href="https://david-000001.github.io/Apex_Rigor_MCQ/" target="_blank" rel="noopener" class="plink plink-demo">&#x25B6; Live Demo</a>
+<a href="https://github.com/David-000001/Apex_Rigor_MCQ" target="_blank" rel="noopener" class="plink plink-gh">&#x2325; GitHub</a>
+</div>
+</div>
+<div class="project-card">
         <div class="project-top">
           <span class="project-badge badge-adv">&#x2B21; Advanced</span>
           <div class="project-title">Malaysia Tech Job Market Intelligence</div>
@@ -561,7 +573,7 @@ footer strong{color:var(--gold)}
 </footer>
 
 <script>
-/* Cross-browser smooth scroll — works on Chrome AND Safari
+/* Cross-browser smooth scroll â works on Chrome AND Safari
    No CSS scroll-behavior dependency; uses requestAnimationFrame */
 function smoothScrollTo(el, dur) {
   dur = dur || 680;
@@ -604,7 +616,7 @@ if('IntersectionObserver' in window){
   faders.forEach(function(el){ el.classList.add('visible'); });
 }
 
-/* Active nav — RAF-throttled */
+/* Active nav â RAF-throttled */
 var ticking=false;
 var navAs=document.querySelectorAll('.nav-links a');
 window.addEventListener('scroll',function(){
